@@ -88,8 +88,35 @@ To answer this question, a 2-sample t-test was performed with the following resu
 Since our p-value is < .05 (alpha), we reject the null hypothesis and accept that there is a significant difference in the popularity between movies that belong to a collection and those that don't belong to a collection. This conclusion further affirms the results in the barplot:
 ![movie pop](https://github.com/cipalisoc/Project3/blob/main/movie%20pop.jpg?raw=true)
 
+## Do bigger budget films (>$10Million) have higher average votes than films with a lesser budget?
+### Null and Alternative Hypothesis
+- Null Hypothesis: There is no difference in the average votes between high-budget movies and low-budget movies
+- Alternative Hypothesis: There a significant difference in the average votes between high-budget movies and low-budget movies
+- significance value (alpha) = .05
 
+![vodte_budget](https://github.com/cipalisoc/Project3/blob/main/vote_budget.jpg?raw=true)
 
+Based on the graphic above, it isn't explicitly clear whether higher budget films have higher average votes (viewer film rating) than films with a lesser budget. We determined this with a 2-sample t-test and produced the following result:  
+`Ttest_indResult(statistic=79.21185999428174, pvalue=0.0)`  
+Since the p-value is less than the alpha level of 0.05, we can reject the null hypothesis and conclude that there is a significant difference between average votes of big-budget films and low-budget films.
 
+## Do movies that are over 2.5 hours long earn more revenue than movies that are 1.5 hours long (or less)?
+### Null and Alternative Hypothesis
+- Null Hypothesis: There is no difference in the revenue between movies that are 2.5 hours or longer than movies that are 1.5 hours long or less
+- Alternative Hypothesis: There a significant difference in the revenue between movies that are 2.5 hours or longer than movies that are 1.5 hours long or less
+- significance value (alpha) = .05
 
+![len_rev](https://github.com/cipalisoc/Project3/blob/main/len_rev.jpg?raw=true) 
+As shown on the plot, it seems that movies whose runtime are 150 minutes or more earn higher revenues than movies with less than 150 minutes of runtime. We confirmed this using a 2-Sample t-test, which yielded the result,  
+`Ttest_indResult(statistic=4.291900422607449, pvalue=2.0452739840729665e-05)`  
+Thereby confirming that since the resulting p-value of the 2-sample t-test is less than our alpha of .05, can reject the null hypothesis and accept our alternative hypothesis that there is a significant difference in the revenues of long films (> 150 mins) versus short films (< 150 mins).
+
+# Recommendations
+Based on the data and results gathered, typically movies that are PG-13 or R rated, have budgets with $10 Million or more, belong to a collection, and have runtimes of more than 150 minutes have the higher earnings. A successful movie will cater to a more mature audience that we see as the typical summer-movie blockbuster. The most successful movie franchises follow this criteria as well including: Marvel movies, Mission: Impossible series, and The Fast and the Furious franchise just to name a few.
+
+# For Further Information
+For any additional questions, please contact:
+
+- Chris Palisoc
+- cipalisoc@gmail.com
 
